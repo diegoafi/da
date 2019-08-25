@@ -7,17 +7,6 @@ import { PageNoFoundComponent } from './shared/page-no-found/page-no-found.compo
 import { PagesComponent } from './pages/pages.component';
 
 const appRoutes: Routes = [
-  {
-      path: '',
-      component: PagesComponent,
-      children: [
-        { path: 'home', component: HomeComponent },
-        { path: 'graficas1', component: Graficas1Component },
-        { path: 'progress', component: ProgressComponent },
-        { path: '', pathMatch: 'full', redirectTo: '/home' }
-
-      ]
-  },
   { path: 'login', component: LoginComponent },
   { path: '**', component: PageNoFoundComponent }
 ];
