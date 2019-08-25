@@ -13,18 +13,21 @@ import { PagesModule } from './pages/pages.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 
+// temporal
 
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule,
     PagesModule,
+    FormsModule,
     APP_ROUTES
   ],
   providers: [],
